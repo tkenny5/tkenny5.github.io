@@ -7,7 +7,7 @@
 $url = "https://quickstats.nass.usda.gov/api/api_GET/?key=399E0F13-4AC9-3195-9871-17C86127C0B0&source_desc=SURVEY&group_desc=DAIRY&statisticcat_desc=PRODUCTION&unit_desc=LB%20/%20HEAD&freq_desc=MONTHLY&format=json&year=2016";
 $json = file_get_contents($url);
 $data = json_decode($json, TRUE);
-print $data;
+echo $data;
 
 ?>
 
