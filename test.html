@@ -4,10 +4,18 @@
 
 <?php
 
-$url = 'http://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/nama_gdp_c?precision=1&geo=EU28&unit=EUR_HAB&time=2010&time=2011&indic_na=B1GM';
-$json = file_get_contents($url);
-$data = json_decode($json);
-echo $data;
+\\$url = 'http://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/nama_gdp_c?precision=1&geo=EU28&unit=EUR_HAB&time=2010&time=2011&indic_na=B1GM';
+\\$json = file_get_contents($url);
+\\$data = json_decode($json);
+\\echo $data;
+ 
+$json_url = "http://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/nama_gdp_c?precision=1&geo=EU28&unit=EUR_HAB&time=2010&time=2011&indic_na=B1GM";
+$json = file_get_contents($json_url);
+$data = json_decode($json, TRUE);
+echo "<pre>";
+print_r($data);
+echo "</pre>";
+
 
 ?>
 
