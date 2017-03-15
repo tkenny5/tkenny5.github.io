@@ -1,15 +1,10 @@
 <?php
-// set location
-$address = "Brooklyn+NY+USA";
 
-//set map api url
 $url = "https://quickstats.nass.usda.gov/api/api_GET/?key=399E0F13-4AC9-3195-9871-17C86127C0B0&source_desc=SURVEY&group_desc=DAIRY&statisticcat_desc=PRODUCTION&unit_desc=LB%20/%20HEAD&freq_desc=MONTHLY&format=json&year=2016";
 
-//call api
 $json = file_get_contents($url);
 $json = json_decode($json);
-$lat = $json->results[0]->geometry->location->lat;
-$lng = $json->results[0]->geometry->location->lng;
-echo "Latitude: " . $lat . ", Longitude: " . $lng;
+$lat = $json->results[0];
+echo $lat;
 
 ?>
