@@ -1,7 +1,7 @@
 <!-- saved from url=(0070)https://tableau.github.io/webdataconnector/Examples/jsonConnector.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>json Connector</title>
-<script src="./json Connector_files/jquery.min.js.download" type="text/javascript"></script>
+<script src="./json Connector_files/jquery311.js" type="text/javascript"></script>
 <script src="./json Connector_files/tableauwdc220.js" type="text/javascript"></script>
 <script type="text/javascript">
 (function() {
